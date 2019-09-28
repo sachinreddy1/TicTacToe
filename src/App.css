@@ -1,22 +1,116 @@
-.App {
+@import url("https://fonts.googleapis.com/css?family=Roboto|Staatliches");
+
+body {
+  margin: 0;
+  background-color: whitesmoke;
+}
+
+.navbar {
+  height: 100px;
+  background-color: #333333;
+  color: whitesmoke;
+  /* margin-bottom: 15px; */
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  font-size: 40px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  font-family: "Staatliches", serif;
+}
+
+.statusbar {
+  height: 70px;
+  background-color: indianred;
+  color: whitesmoke;
+  margin-bottom: 35px;
+  text-align: center;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Staatliches", serif;
+}
+
+.button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: mediumseagreen;
+  border: none;
+  border-radius: 15px;
+  font-family: "Staatliches", serif;
+
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: indianred;
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.square-type {
+  padding: 0;
+  margin: 0;
+}
+
+.square {
+  font-family: "Staatliches", serif;
+  font-size: 55px;
+  width: 150px;
+  height: 150px;
+  padding: 49px;
+  display: inline-block;
+  margin: 10px;
+  /*  */
+
+  /*  */
+  border-radius: 10px;
+  border: 5px;
+  background-color: lightslategray;
+  color: whitesmoke;
+  box-shadow: 0 5px #666;
+}
+
+.square:active {
+  transform: translateY(4px);
+  box-shadow: 0 0px #666;
+}
+
+.row {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: indianred;
+  color: whitesmoke;
+  /*  */
+  height: 50px;
+  font-size: 25px;
+  display: flex;
+
+  align-items: center;
+
+  font-family: "Staatliches", serif;
+}
+
+.footerText {
+  position: fixed;
+  right: 15px;
 }
